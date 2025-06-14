@@ -2,17 +2,27 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## INDEX
 
-[back](./)
+1. Methodology
+   
+3. Immovable Cultural Property _Basilica di Santo Stefano_
+   
+5. Immovable Cultural Property _Basilica di San Petronio_
 
-There should be whitespace between paragraphs.
+### 1. Methodology
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+* Making hypotheses
 
-# Header 1
+* Looking for the data in the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/
 
-is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+* Realizing queries using the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql
+
+* Verifying if the retrieved data could actually back up our hypotheses or not
+
+* Using Large Language Models 
+
+* Creating RDF triples that could be addeded to the knowledge graph
 
 ## Header 2
 
@@ -114,6 +124,7 @@ end
 <dd>Green</dd>
 </dl>
 
+[back](./)
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
