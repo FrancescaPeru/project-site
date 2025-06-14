@@ -77,7 +77,7 @@ Analysing the LLMs results we noticed that:
 * Gemini did not filter the label;
 * ChatGpt correctly used ArCo’s properties that we provided and used the double FILTER to find the square in Bologna.
 
-Using the ChatGpt’s query, we obtained this IRI as a result <https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c> 
+Using the ChatGpt’s query, we obtained this IRI as a result [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
 
 After reviewing the results and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
