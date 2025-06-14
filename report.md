@@ -106,7 +106,7 @@ Result: Gemini answered correctly with “San Giovanni Battista” while both Mi
 
 ### Step 5
 
-We wrote a query in order to find the IRI of San Giovanni Battista on ArCo. We also employed the keyword **ORDER BY ASC **to have more organized results.
+We wrote a query in order to find the IRI of San Giovanni Battista on ArCo. We also employed the keyword **ORDER BY ASC** to have more organized results.
 
 ```js
 PREFIX cpv: <https://w3id.org/italia/onto/CPV/>
