@@ -72,7 +72,13 @@ Still not obtaining any results, we decided to base our research on the address 
 
 AGGIUNGERE FOTO LLMS CHAIN OF THOUGHT RISULTATI
 
-We obtained as a result this IRI <https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c> 
+Analysing the LLMs results we noticed that:
+* Mistral did not use ArCo’s properties and did not filter the label;
+* Gemini did not filter the label;
+* ChatGpt correctly used ArCo’s properties that we provided and used the double FILTER to find the square in Bologna.
+
+Using the ChatGpt’s query, we obtained this IRI as a result <https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c> 
+
 After reviewing the results and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
 * SUGGESTION: To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia (https://dbpedia.org/resource/Santo_Stefano,_Bologna) by using the property owl:sameAs.
