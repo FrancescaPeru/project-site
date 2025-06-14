@@ -26,19 +26,23 @@ layout: default
 
 ## 2. Immovable Cultural Property _Basilica di Santo Stefano_
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### Step 1
 
-### Header 3
+We chose the Basilica di Santo Stefano as our first topic. Then, we examined the ArCo ontology to see to which class the churches belong. We found two classes: a more general one (arco:ImmovableCulturalProperty) and a more specific one (arco:ArchitecturalOrLandscapeHeritage). We chose ImmovableCulturalProperty. Then we did the first query in order to find the Basilica di Santo Stefano on ArCo, and we also employed the keyword DISTINCT to be sure not to have any duplicates in the results.
 
 ```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+SELECT DISTINCT*
+WHERE {
+?s a arco:ImmovableCulturalProperty; 
+rdfs:label ?label.
+FILTER (?label, “Basilica di Santo Stefano”, “i”) 
 }
 ```
+We obtained 0 results.
 
 ```ruby
 # Ruby code with syntax highlighting
