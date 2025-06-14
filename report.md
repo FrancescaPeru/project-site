@@ -165,6 +165,30 @@ From the RDF page of San Petronio we found the two artists that projected it and
 * [IRI Andrea da Faenza](https://w3id.org/arco/resource/Agent/1225a7cd56d844001bb0d0256259ab63)
 * [IRI Di Vincezo Antonio](https://w3id.org/arco/resource/Agent/2cfcbabdc54b72ed32e2a9d0b2a4538a)
 
+### Step 2
+We formulated a query in order to find their other works. We used: the keyword **UNION** to find the works of either artists; the keyword **OPTIONAL** to show us any possible images; the keyword **LIMIT** to set a limit and the keyword **ORDER BY ASC** to list the results in alphabetical order.
+
+```js
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+ PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+ PREFIX agent: <https://w3id.org/arco/resource/Agent/>
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+SELECT DISTINCT*
+WHERE {
+
+?cp a arco:ArchitecturalOrLandscapeHeritage;
+rdfs:label ?label
+{ ?cp a-cd:hasAuthor agent:1225a7cd56d844001bb0d0256259ab63 }
+UNION
+{ ?cp a-cd:hasAuthor agent:2cfcbabdc54b72ed32e2a9d0b2a4538a }
+OPTIONAL { ?cp a-cd:depiction ?depiction }
+}
+ORDER BY ASC (?label)
+LIMIT 20
+```
+We obtained 12 results of which half is in English and half is in Italian, with the same IRIs
+
 #### Header 4
 
 *   This is an unordered list following a header.
