@@ -10,7 +10,7 @@ layout: default
    
 3. Immovable Cultural Property _Basilica di San Petronio_
 
-### 1. Methodology
+## 1. Methodology
 
 * Making hypotheses
 
