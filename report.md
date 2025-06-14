@@ -6,9 +6,9 @@ layout: default
 
 1. [Methodology](#1-methodology)
    
-2. [Immovable Cultural Property _Basilica di Santo Stefano_](#2-Immovable-Cultural-Property-Basilica-di-Santo-Stefano)
+2. [Immovable Cultural Property _Basilica di Santo Stefano_](#2-immovable-cultural-property-basilica-di-santo-stefano)
    
-3. Immovable Cultural Property _Basilica di San Petronio_
+3. [Immovable Cultural Property _Basilica di San Petronio_](#3-immovable-cultural-property-basilica-di-san-petronio)
 
 ## 1. Methodology
 
