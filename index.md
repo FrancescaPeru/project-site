@@ -24,7 +24,7 @@ Basilicas in Bologna: a detailed analysis of the basilicas of _Santo Stefano_ an
 
 Francesca Perugini, Cora Siliprandi, Francesca Rosati, Kimberly Pastorelli & Francesca Mattioli
 
-#**OUR PROJECT**
+# **OUR PROJECT**
 
 [Link to Pagina2](./pagina2.md).
 [Link to Pagina3](./pagina3.md).
