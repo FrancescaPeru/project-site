@@ -342,8 +342,8 @@ Since the LLMs results were not satisfactory we dediced to provide our own tripl
 <dd>Green</dd>
 </dl>
 
-[Link to home](./linktohome.md)
-[back](./)
+
+[Home](./)
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
