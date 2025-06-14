@@ -4,7 +4,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to Pagina2](./pagina2.html).
+[Link to Pagina2](./pagina2.md).
 
 There should be whitespace between paragraphs.
 
