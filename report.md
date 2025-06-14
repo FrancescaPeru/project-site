@@ -70,7 +70,13 @@ We obtained 0 results.
 
 ### Step 3
 
-Still not obtaining any results, we decided to base our research on the address “Piazza Santo Stefano” in order to find the buildings located there. We asked the LLMs to write a query to retrieve this information with the **prompting technique chain-of-thought**. 
+Still not obtaining any results, we decided to base our research on the address “Piazza Santo Stefano” in order to find the buildings located there. We asked the LLMs to write a query to retrieve this information with the **prompting technique chain-of-thought**.
+* Question: _You are given the following ontology terms from ArCo:
+- clv:Address (class of addressable objects)
+- rdfs:label (data property linking an entity to its label)
+Task: Write a SPARQL query to find the Address of Piazza Santo Stefano in Bologna using Turtle syntax. 
+Let’s think step by step.__
+
 
 AGGIUNGERE FOTO LLMS CHAIN OF THOUGHT RISULTATI
 
@@ -91,8 +97,8 @@ To enrich ArCo, it would be useful to add a single entity that represents the en
 
 Among the churches in Piazza Santo Stefano that form part of the Basilica, we choose _Chiesa del Crocifisso_, and by analyzing its RDF page, we noticed that among the missing information there is the saint to whom it is dedicated.
 
-We asked the LLMs to find the saint to whom the Chiesa del Crocifisso is dedicated with the zeroshot prompting technique. According to our investigations, we discovered that it is dedicated to San Giovanni Battista.
-* Question: To whom is dedicated Chiesa del Crocifisso in Piazza Santo Stefano in Bologna?
+We asked the LLMs to find the saint to whom the Chiesa del Crocifisso is dedicated with the **zeroshot prompting technique**. According to our investigations, we discovered that it is dedicated to San Giovanni Battista.
+* Question: _To whom is dedicated Chiesa del Crocifisso in Piazza Santo Stefano in Bologna?_
 
 INSERT FOTO
 
@@ -188,6 +194,21 @@ ORDER BY ASC (?label)
 LIMIT 20
 ```
 We obtained 12 results of which half is in English and half is in Italian, with the same IRIs
+
+### Step 3
+
+Among all the results we also chose the _Chiesa di Santa Maria dei Servi_ [IRI of the church](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309).
+In the RDF description of the church we noticed that there are no links to the artworks that can be found within it.
+
+According to our previous investigations we discovered that there are many paintings within the church. We queried the LLMs about the paintings with a **zeroshot prompting technique**.
+
+* Question: _Which are the paintings exhibited in Chiesa di Santa Maria dei Servi in Bologna?_
+
+FOTOOOOO
+
+All the LLMs answered correctly, however Mistral was more generic while Gemini e ChatGpt were more precise.
+
+
 
 #### Header 4
 
