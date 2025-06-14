@@ -26,6 +26,6 @@ Francesca Perugini, Cora Siliprandi, Francesca Rosati, Kimberly Pastorelli & Fra
 
 # **OUR PROJECT**
 
-[Link to Pagina2](./pagina2.md).
+[Link to Report](./report.md).
 
-[Link to Pagina3](./pagina3.md).
+[Link to Final Step](./finalstep.md).
