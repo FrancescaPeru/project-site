@@ -44,12 +44,28 @@ FILTER (?label, "Basilica di Santo Stefano", "i")
 ```
 We obtained 0 results.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+### Step 2
+
+Since we did not get any results, we made the query more generic by looking for an Immovable Cultural Property related to “Santo Stefano” in the city of “Bologna”. In order to do so, we used the keywords FILTER and REGEX to obtain results containing these substrings. 
+
+```js
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT DISTINCT*
+WHERE {
+?cp a arco:ImmovableCulturalProperty;
+rdfs:label ?label;
+dc:coverage ?coverage.
+FILTER(
+REGEX(?label, "santo Stefano", "i") &&
+REGEX(?coverage, "Bologna", "i"))
+}
 ```
+We obtained 0 results.
+
 
 #### Header 4
 
