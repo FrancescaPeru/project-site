@@ -10,6 +10,7 @@ layout: default
    
 3. [Immovable Cultural Property _Basilica di San Petronio_](#3-immovable-cultural-property-basilica-di-san-petronio)
 
+
 ## 1. Methodology
 
 * Making hypotheses
@@ -23,6 +24,7 @@ layout: default
 * Using Large Language Models 
 
 * Creating RDF triples that could be addeded to the knowledge graph
+
 
 ## 2. Immovable Cultural Property _Basilica di Santo Stefano_
 
@@ -137,6 +139,31 @@ As a result we obtained this new triple
 
 FOTOOOOOOOOOOOO
 
+
+## 3. Immovable Cultural Property _Basilica di San Petronio_
+
+### Step 1
+
+For the second topic we chose the Basilica di San Petronio. We formulated a query in order to find it on ArCo:
+
+```js
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+SELECT DISTINCT*
+WHERE {
+?cp a arco:ArchitecturalOrLandscapeHeritage; 
+rdfs:label ?label.
+FILTER(
+REGEX(?label, "San Petronio", "i") &&
+REGEX(?label, "basilica", "i"))
+}
+```
+We obtained 2 results of which one is in English and the other in Italian, referring to the same entity [IRI Basilica di San Petronio](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039)
+
+From the RDF page of San Petronio we found the two artists that projected it and took their IRIs: 
+* [IRI Andrea da Faenza](https://w3id.org/arco/resource/Agent/1225a7cd56d844001bb0d0256259ab63)
+* [IRI Di Vincezo Antonio](https://w3id.org/arco/resource/Agent/2cfcbabdc54b72ed32e2a9d0b2a4538a)
 
 #### Header 4
 
