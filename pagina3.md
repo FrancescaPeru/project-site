@@ -1,3 +1,9 @@
-title: Pagina 3
-# Questa è la terza pagina
+---
+layout: default
+---
 
+## Welcome to another page PAGINA 3
+
+_yay_
+
+[back](./)
