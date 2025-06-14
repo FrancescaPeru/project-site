@@ -81,7 +81,7 @@ Using the ChatGpt’s query, we obtained this IRI as a result [IRI address Piazz
 
 After reviewing the results and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
-#### SUGGESTION: 
+#### SUGGESTION 
 
 To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia [IRI DBpedia Basilica di Santo Stefano](https://dbpedia.org/resource/Santo_Stefano,_Bologna) by using the property owl:sameAs.
 
@@ -96,6 +96,27 @@ INSERT FOTO
 
 Result: Gemini answered correctly with “San Giovanni Battista” while both Mistral and ChatGpt provided wrong answers.
 
+### Step 5
+
+We wrote a query in order to find the IRI of San Giovanni Battista on ArCo. We also employed the keyword **ORDER BY ASC **to have more organized results.
+
+```js
+PREFIX cpv: <https://w3id.org/italia/onto/CPV/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT*
+WHERE {
+?agent a cpv:Person;
+rdfs:label ?label
+FILTER(REGEX(?label, "Giovanni Battista", "i"))
+}
+ORDER BY ASC (?label)
+```
+We are provided with hundreds of results that don’t match with the entity that we were looking for.
+
+#### SUGGESTION
+
+To enrich the knowledge graph it would be useful to create an IRI in ArCo to identify San Giovanni Battista.
+We imported from dbpedia the IRI of San Giovanni Battista to enrich ArCo’s knowledge graphs with a new entity [IRI DBpedia Giovanni Battista](https://dbpedia.org/page/John_the_Baptist).
 
 #### Header 4
 
