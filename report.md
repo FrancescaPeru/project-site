@@ -77,7 +77,7 @@ Still not obtaining any results, we decided to base our research on the address 
 Task: Write a SPARQL query to find the Address of Piazza Santo Stefano in Bologna using Turtle syntax. 
 Let’s think step by step.__
 
-![ChatGPT](project-site/assets/images/LLM-PROMPTING-CHAIN-CHATGPT.png)
+![ChatGPT](assets/images/LLMPROMPTING/CHAIN_CHATGPT.png)
 
 
 Analysing the LLMs results we noticed that:
