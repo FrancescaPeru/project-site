@@ -30,7 +30,7 @@ layout: default
 
 ### Step 1
 
-We chose the _Basilica di Santo Stefano_ as our first topic. Then, we examined the ArCo ontology to see to which class the churches belong. We found two classes: a more general one (arco:ImmovableCulturalProperty) and a more specific one (arco:ArchitecturalOrLandscapeHeritage). We chose ImmovableCulturalProperty. Then we did the first query in order to find the Basilica di Santo Stefano on ArCo, and we also employed the keyword **DISTINCT** to be sure not to have any duplicates in the results.
+We chose the _Basilica di Santo Stefano_ as our first topic. Then, we examined the ArCo ontology to see to which class the churches belong. We found two classes: a more general one (arco:ImmovableCulturalProperty) and a more specific one (arco:ArchitecturalOrLandscapeHeritage). We chose ImmovableCulturalProperty. Then we did the first query in order to find the _Basilica di Santo Stefano_ on ArCo, and we also employed the keyword **DISTINCT** to be sure not to have any duplicates in the results.
 
 ```js
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
