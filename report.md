@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### INDEX
+# INDEX
 
 1. [Methodology](#1-methodology)
    
