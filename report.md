@@ -4,11 +4,11 @@ layout: default
 
 ### INDEX
 
-1. Methodology
+1. [Methodology](#methodology)
    
-3. Immovable Cultural Property _Basilica di Santo Stefano_
+2. [Immovable Cultural Property _Basilica di Santo Stefano_] 
    
-5. Immovable Cultural Property _Basilica di San Petronio_
+3. Immovable Cultural Property _Basilica di San Petronio_
 
 ### 1. Methodology
 
@@ -24,7 +24,7 @@ layout: default
 
 * Creating RDF triples that could be addeded to the knowledge graph
 
-## Header 2
+### 2. Immovable Cultural Property _Basilica di Santo Stefano_
 
 > This is a blockquote following a header.
 >
