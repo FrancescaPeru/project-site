@@ -208,6 +208,30 @@ FOTOOOOO
 
 All the LLMs answered correctly, however Mistral was more generic while Gemini e ChatGpt were more precise.
 
+### Step 4
+
+Among all the results, we chose Cimabue’s _La Madonna col bambino e angeli_ and we wanted to see if the painting was present in the ArCo system. To do so, we used the following query:
+
+```js
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+ PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+SELECT DISTINCT*
+WHERE {
+?cp a arco:HistoricOrArtisticProperty;
+rdfs:label ?label;
+a-cd:hasAuthor ?author.
+?author rdfs:label ?authorlabel.
+FILTER(
+REGEX(?label, "Madonna", "i") &&
+REGEX(?authorlabel, "Cenni di Pepo", "i"))
+}
+```
+We got 10 results, half of which were in English. Between the given results there is the painting that we were looking for: [IRI painting](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800018958)
+
+Checking its RDF description, we noticed that it is not linked to the Chiesa di Santa Maria dei Servi, where it is kept.
+
+
 
 
 #### Header 4
