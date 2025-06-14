@@ -5,6 +5,7 @@ layout: default
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to Pagina2](./pagina2.md).
+[Link to Pagina3](./pagina3.md).
 
 There should be whitespace between paragraphs.
 
