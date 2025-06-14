@@ -44,7 +44,7 @@ rdfs:label ?label.
 FILTER (?label, "Basilica di Santo Stefano", "i") 
 }
 ```
-We obtained 0 results.
+We obtained no results.
 
 ### Step 2
 
@@ -66,7 +66,7 @@ REGEX(?label, "santo Stefano", "i") &&
 REGEX(?coverage, "Bologna", "i"))
 }
 ```
-We obtained 0 results.
+We obtained no results.
 
 ### Step 3
 
