@@ -81,7 +81,21 @@ Using the ChatGpt’s query, we obtained this IRI as a result <https://w3id.org/
 
 After reviewing the results and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
-* SUGGESTION: To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia (https://dbpedia.org/resource/Santo_Stefano,_Bologna) by using the property owl:sameAs.
+#### SUGGESTION: 
+
+To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia (https://dbpedia.org/resource/Santo_Stefano,_Bologna) by using the property owl:sameAs.
+
+### Step 4
+
+Among the churches in Piazza Santo Stefano that form part of the Basilica, we choose _Chiesa del Crocifisso_, and by analyzing its RDF page, we noticed that among the missing information there is the saint to whom it is dedicated.
+
+We asked the LLMs to find the saint to whom the Chiesa del Crocifisso is dedicated with the zeroshot prompting technique. According to our investigations, we discovered that it is dedicated to San Giovanni Battista.
+* Question: To whom is dedicated Chiesa del Crocifisso in Piazza Santo Stefano in Bologna?
+
+INSERT FOTO
+
+Result: Gemini answered correctly with “San Giovanni Battista” while both Mistral and ChatGpt provided wrong answers.
+
 
 #### Header 4
 
