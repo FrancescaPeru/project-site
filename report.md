@@ -249,6 +249,22 @@ LIMIT 50
 ```
 We obtained 7 results and between those we chose the one called a-cd:isLocatedIn [IRI property isLocatedIn](https://w3id.org/arco/ontology/context-description/isLocatedIn). This property, part of the “Context-Description” properties, links a cultural good to another related cultural good, which is its location.
 
+### Step 6
+
+Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple that could express this relation. We used the few-shot prompting technique and provided two examples, hoping to achieve a more accurate output that would imitate our examples. Here is our question to the LLMs:
+
+*Inserire immagine
+
+Analyzing the results we noticed that: 
+* Gemini respected the structure that we provided but it used some variables instead of the IRIs
+* ChatGpt respected the structure that we provided but invented the IRIs
+* Mistral respected the structure that we provided, but used different prefixes to those indicated and invented the IRIs
+
+Since the LLMs results were not satisfactory we dediced to provide our own triple: 
+<https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800108309> a-cd:isLocatedIn <https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039> }
+
+
+
 #### Header 4
 
 *   This is an unordered list following a header.
