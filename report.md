@@ -118,6 +118,26 @@ We are provided with hundreds of results that don’t match with the entity that
 To enrich the knowledge graph it would be useful to create an IRI in ArCo to identify San Giovanni Battista.
 We imported from dbpedia the IRI of San Giovanni Battista to enrich ArCo’s knowledge graphs with a new entity [IRI DBpedia Giovanni Battista](https://dbpedia.org/page/John_the_Baptist).
 
+### Step 6
+
+Therefore, we used a **SPARQL CONSTRUCT **query to create a new property in order to describe the relationship between the church and the saint to whom it is dedicated, obtaining a new triple that can enrich ArCo’s knowledge graph. We chose the a-cd prefix because we assumed we could find this kind of information in the context description ontology.
+
+```js
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX alh: <https://w3id.org/arco/ontology/arco/ArchitecturalOrLandscapeHeritage/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+CONSTRUCT {
+alh:0800242970 a-cd:isDedicatedToSaint dbr:John_the_Baptist
+}
+WHERE {
+}
+```
+
+As a result we obtained this new triple
+
+FOTOOOOOOOOOOOO
+
+
 #### Header 4
 
 *   This is an unordered list following a header.
