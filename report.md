@@ -231,8 +231,23 @@ We got 10 results, half of which were in English. Between the given results ther
 
 Checking its RDF description, we noticed that it is not linked to the Chiesa di Santa Maria dei Servi, where it is kept.
 
+### Step 5
 
+Therefore, we created a SPARQL query to search through the ArCo ontologies to find a property that we could use to link this work of art to the church where it is kept.
 
+```js
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+SELECT DISTINCT ?place
+WHERE {
+?culturalProperty a arco:HistoricOrArtisticProperty. 
+?church a arco:ArchitecturalOrLandscapeHeritage.
+?culturalProperty ?propertylocation ?church.
+}
+ORDER BY ASC (?place)
+LIMIT 50
+```
+We obtained 7 results and between those we chose the one called a-cd:isLocatedIn [IRI property isLocatedIn](https://w3id.org/arco/ontology/context-description/isLocatedIn). This property, part of the “Context-Description” properties, links a cultural good to another related cultural good, which is its location.
 
 #### Header 4
 
