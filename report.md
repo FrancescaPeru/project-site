@@ -39,7 +39,7 @@ SELECT DISTINCT*
 WHERE {
 ?s a arco:ImmovableCulturalProperty; 
 rdfs:label ?label.
-FILTER (?label, “Basilica di Santo Stefano”, “i”) 
+FILTER (?label, "Basilica di Santo Stefano", "i") 
 }
 ```
 We obtained 0 results.
