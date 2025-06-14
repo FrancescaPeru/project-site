@@ -4,7 +4,7 @@ layout: default
 
 ### INDEX
 
-1. [Methodology](###methodology)
+1. [Methodology](#1-methodology)
    
 2. [Immovable Cultural Property _Basilica di Santo Stefano_] 
    
