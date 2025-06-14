@@ -273,5 +273,6 @@ Since the LLMs results were not satisfactory we dediced to provide our own tripl
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
-[Link to Final Step](./finalstep.md).
+[Link to Final Step](./finalstep.md)
+
 [Home](./)
