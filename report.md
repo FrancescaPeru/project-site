@@ -71,42 +71,41 @@ We obtained 0 results.
 ### Step 3
 
 Still not obtaining any results, we decided to base our research on the address “Piazza Santo Stefano” in order to find the buildings located there. We asked the LLMs to write a query to retrieve this information with the **prompting technique chain-of-thought**.
-* Question: _You are given the following ontology terms from ArCo:
-- clv:Address (class of addressable objects)
-- rdfs:label (data property linking an entity to its label)
-Task: Write a SPARQL query to find the Address of Piazza Santo Stefano in Bologna using Turtle syntax. 
-Let’s think step by step.__
+* _Question: You are given the following ontology terms from ArCo:_
+  _clv:Address (class of addressable objects)_
+  _rdfs:label (data property linking an entity to its label)_
+_Task: Write a SPARQL query to find the Address of Piazza Santo Stefano in Bologna using Turtle syntax. 
+Let’s think step by step._
 
 ![ChatGPT](/images/LLMPROMPTING/CHAIN_CHATGPT.png)
-
 
 Analysing the LLMs results we noticed that:
 * Mistral did not use ArCo’s properties and did not filter the label;
 * Gemini did not filter the label;
 * ChatGpt correctly used ArCo’s properties that we provided and used the double FILTER to find the square in Bologna.
 
-Using the ChatGpt’s query, we obtained this IRI as a result [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
+Using the ChatGpt’s query, we obtained this IRI as a result: [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
 
 After reviewing the results and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
 #### SUGGESTION 
 
-To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia [IRI DBpedia Basilica di Santo Stefano](https://dbpedia.org/resource/Santo_Stefano,_Bologna) by using the property owl:sameAs.
+To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia ([IRI DBpedia Basilica di Santo Stefano](https://dbpedia.org/resource/Santo_Stefano,_Bologna)) by using the property **owl:sameAs**.
 
 ### Step 4
 
-Among the churches in Piazza Santo Stefano that form part of the Basilica, we choose _Chiesa del Crocifisso_, and by analyzing its RDF page, we noticed that among the missing information there is the saint to whom it is dedicated.
+Among the churches in _Piazza Santo Stefano_ that form part of the Basilica, we choose _Chiesa del Crocifisso_, and by analyzing its RDF page, we noticed that among the missing information there is the saint to whom it is dedicated.
 
-We asked the LLMs to find the saint to whom the Chiesa del Crocifisso is dedicated with the **zeroshot prompting technique**. According to our investigations, we discovered that it is dedicated to San Giovanni Battista.
-* Question: _To whom is dedicated Chiesa del Crocifisso in Piazza Santo Stefano in Bologna?_
+We asked the LLMs to find the saint to whom the _Chiesa del Crocifisso_ is dedicated with the **zero-shot prompting technique**. According to our investigations, we discovered that it is dedicated to San Giovanni Battista.
+* _Question: To whom is dedicated Chiesa del Crocifisso in Piazza Santo Stefano in Bologna?_
 
 INSERT FOTO
 
-Result: Gemini answered correctly with “San Giovanni Battista” while both Mistral and ChatGpt provided wrong answers.
+Analysing the results we noticed that Gemini answered correctly with “San Giovanni Battista” while both Mistral and ChatGpt provided wrong answers.
 
 ### Step 5
 
-We wrote a query in order to find the IRI of San Giovanni Battista on ArCo. We also employed the keyword **ORDER BY ASC** to have more organized results.
+We wrote a query in order to find the IRI of _San Giovanni Battista_ on ArCo. We also employed the keyword **ORDER BY ASC** to have more organized results.
 
 ```js
 PREFIX cpv: <https://w3id.org/italia/onto/CPV/>
@@ -123,12 +122,12 @@ We are provided with hundreds of results that don’t match with the entity that
 
 #### SUGGESTION
 
-To enrich the knowledge graph it would be useful to create an IRI in ArCo to identify San Giovanni Battista.
-We imported from dbpedia the IRI of San Giovanni Battista to enrich ArCo’s knowledge graphs with a new entity [IRI DBpedia Giovanni Battista](https://dbpedia.org/page/John_the_Baptist).
+To enrich the knowledge graph it would be useful to create an IRI in ArCo to identify _San Giovanni Battista_.
+We imported from dbpedia the IRI of _San Giovanni Battista_ to enrich ArCo’s knowledge graphs with a new entity: [IRI DBpedia Giovanni Battista](https://dbpedia.org/page/John_the_Baptist).
 
 ### Step 6
 
-Therefore, we used a **SPARQL CONSTRUCT **query to create a new property in order to describe the relationship between the church and the saint to whom it is dedicated, obtaining a new triple that can enrich ArCo’s knowledge graph. We chose the a-cd prefix because we assumed we could find this kind of information in the context description ontology.
+Therefore, we used a **SPARQL CONSTRUCT** query to create a new property in order to describe the relationship between the church and the saint to whom it is dedicated, obtaining a new triple that can enrich ArCo’s knowledge graph. We chose the **a-cd prefix** because we assumed we could find this kind of information in the context description ontology.
 
 ```js
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
@@ -141,7 +140,7 @@ WHERE {
 }
 ```
 
-As a result we obtained this new triple
+As a result we obtained this new triple:
 
 FOTOOOOOOOOOOOO
 
@@ -150,7 +149,7 @@ FOTOOOOOOOOOOOO
 
 ### Step 1
 
-For the second topic we chose the Basilica di San Petronio. We formulated a query in order to find it on ArCo:
+For the second topic we chose the _Basilica di San Petronio_. We formulated a query in order to find it on ArCo:
 
 ```js
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -165,7 +164,7 @@ REGEX(?label, "San Petronio", "i") &&
 REGEX(?label, "basilica", "i"))
 }
 ```
-We obtained 2 results of which one is in English and the other in Italian, referring to the same entity [IRI Basilica di San Petronio](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039)
+We obtained 2 results of which one is in English and the other in Italian, referring to the same entity: [IRI Basilica di San Petronio](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039)
 
 From the RDF page of San Petronio we found the two artists that projected it and took their IRIs: 
 * [IRI Andrea da Faenza](https://w3id.org/arco/resource/Agent/1225a7cd56d844001bb0d0256259ab63)
@@ -193,16 +192,16 @@ OPTIONAL { ?cp a-cd:depiction ?depiction }
 ORDER BY ASC (?label)
 LIMIT 20
 ```
-We obtained 12 results of which half is in English and half is in Italian, with the same IRIs
+We obtained 12 results of which half is in English and half is in Italian, with the same IRIs.
 
 ### Step 3
 
 Among all the results we also chose the _Chiesa di Santa Maria dei Servi_ [IRI of the church](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309).
 In the RDF description of the church we noticed that there are no links to the artworks that can be found within it.
 
-According to our previous investigations we discovered that there are many paintings within the church. We queried the LLMs about the paintings with a **zeroshot prompting technique**.
+According to our previous investigations we discovered that there are many paintings within the church. We queried the LLMs about the paintings with a **zero-shot prompting technique**.
 
-* Question: _Which are the paintings exhibited in Chiesa di Santa Maria dei Servi in Bologna?_
+* _Question: Which are the paintings exhibited in Chiesa di Santa Maria dei Servi in Bologna?_
 
 FOTOOOOO
 
@@ -229,7 +228,7 @@ REGEX(?authorlabel, "Cenni di Pepo", "i"))
 ```
 We got 10 results, half of which were in English. Between the given results there is the painting that we were looking for: [IRI painting](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800018958)
 
-Checking its RDF description, we noticed that it is not linked to the Chiesa di Santa Maria dei Servi, where it is kept.
+Checking its RDF description, we noticed that it is not linked to the _Chiesa di Santa Maria dei Servi_, where it is kept.
 
 ### Step 5
 
@@ -247,11 +246,11 @@ WHERE {
 ORDER BY ASC (?place)
 LIMIT 50
 ```
-We obtained 7 results and between those we chose the one called a-cd:isLocatedIn [IRI property isLocatedIn](https://w3id.org/arco/ontology/context-description/isLocatedIn). This property, part of the “Context-Description” properties, links a cultural good to another related cultural good, which is its location.
+We obtained 7 results and between those we chose the one called **a-cd:isLocatedIn** ([IRI property isLocatedIn](https://w3id.org/arco/ontology/context-description/isLocatedIn)). This property, part of the “Context-Description” properties, links a cultural good to another related cultural good, which is its location.
 
 ### Step 6
 
-Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple that could express this relation. We used the few-shot prompting technique and provided two examples, hoping to achieve a more accurate output that would imitate our examples. Here is our question to the LLMs:
+Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple that could express this relation. We used the **few-shot prompting technique** and provided two examples, hoping to achieve a more accurate output that would imitate our examples. Here is our question to the LLMs:
 
 *Inserire immagine
 
