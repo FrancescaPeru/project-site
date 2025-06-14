@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+[Vai a Pagina 2] (pagina2.md) 
+[Vai a Pagina 3] (pagina3.md)
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
