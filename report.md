@@ -6,7 +6,7 @@ layout: default
 
 1. [Methodology](#1-methodology)
    
-2. [Immovable Cultural Property _Basilica di Santo Stefano_](#2-Immovable-Cultural-Property-_Basilica-di-Santo-Stefano_)
+2. [Immovable Cultural Property _Basilica di Santo Stefano_](#2-Immovable-Cultural-Property-Basilica-di-Santo-Stefano)
    
 3. Immovable Cultural Property _Basilica di San Petronio_
 
@@ -24,7 +24,7 @@ layout: default
 
 * Creating RDF triples that could be addeded to the knowledge graph
 
-### 2. Immovable Cultural Property _Basilica di Santo Stefano_
+## 2. Immovable Cultural Property _Basilica di Santo Stefano_
 
 > This is a blockquote following a header.
 >
