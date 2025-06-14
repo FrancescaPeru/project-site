@@ -83,7 +83,7 @@ After reviewing the results and knowing that the _Basilica di Santo Stefano_ is 
 
 #### SUGGESTION: 
 
-To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia (https://dbpedia.org/resource/Santo_Stefano,_Bologna) by using the property owl:sameAs.
+To enrich ArCo, it would be useful to add a single entity that represents the entire complex with its own IRI and to link it to the corresponding entity on DBpedia [IRI DBpedia Basilica di Santo Stefano](https://dbpedia.org/resource/Santo_Stefano,_Bologna) by using the property owl:sameAs.
 
 ### Step 4
 
