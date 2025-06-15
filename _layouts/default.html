@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <style>
-ul {
+#menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,11 +12,11 @@ ul {
   z-index: 100;
 }
 
-li {
+#menuitems {
   float: left;
 }
 
-li a {
+#menulinks {
   display: block;
   color: white;
   text-align: center;
@@ -24,7 +24,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+#menulinks:hover {
   background-color: #111;
 }
 </style>
@@ -80,10 +80,10 @@ li a:hover {
 
       <span class="banner-fix"></span>
 
-<ul>
-  <li><a href="https://gruppo-12.github.io/project-site/">Home</a></li>
-  <li><a href="https://gruppo-12.github.io/project-site/report.html">Report</a></li>
-  <li><a href="https://gruppo-12.github.io/project-site/finalstep.html">Final Step</a></li>
+<ul id="menu">
+  <li id="menuitems"><a id="menulinks" href="https://gruppo-12.github.io/project-site/">Home</a></li>
+  <li id="menuitems"><a id="menulinks" href="https://gruppo-12.github.io/project-site/report.html">Report</a></li>
+  <li id="menuitems"><a id="menulinks" href="https://gruppo-12.github.io/project-site/finalstep.html">Final Step</a></li>
 </ul>
       <section id="main_content">
         {{ content }}
