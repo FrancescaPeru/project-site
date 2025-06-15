@@ -294,7 +294,17 @@ We obtained 7 results and between those we chose the one called **a-cd:isLocated
 
 Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple that could express this relation. We used the **few-shot prompting technique** and provided two examples, hoping to achieve a more accurate output that would imitate our examples. Here is our question to the LLMs:
 
-*Inserire immagine
+#### ChatGPT
+
+![ChatGPT](assets/images/FEWSHOT_CHATGPT.png)
+
+#### Gemini
+
+![Gemini](assets/images/FEWSHOT_GEMINI.png)
+
+#### Mistral
+
+![Mistral](assets/images/FEWSHOT_MISTRAL.png)
 
 Analyzing the results we noticed that: 
 * Gemini respected the structure that we provided but it used some variables instead of the IRIs
@@ -303,16 +313,6 @@ Analyzing the results we noticed that:
 
 Since the LLMs results were not satisfactory we dediced to provide our own triple: 
 <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800108309> a-cd:isLocatedIn <https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039> }
-
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
 
 [Link to Final Step](./finalstep.md)
 
