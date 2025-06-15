@@ -87,6 +87,7 @@ Let’s think step by step._
 
 #### Mistral
 
+![Mistral](assets/images/CHAIN_MISTRAL.jpeg)
 
 Analysing the LLMs results we noticed that:
 * Mistral did not use ArCo’s properties and did not filter the label;
