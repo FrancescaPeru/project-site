@@ -123,9 +123,15 @@ We asked the LLMs to find the saint to whom the _Chiesa del Crocifisso_ is dedic
 
 #### ChatGPT
 
+![ChatGPT](assets/images/ZEROSHOT_1_CHATGPT.png)
+
 #### Gemini
 
+![Gemini](assets/images/ZEROSHOT_1_GEMINI.png)
+
 #### Mistral
+
+![Mistral](assets/images/ZEROSHOT_1_MISTRAL.jpeg)
 
 Analysing the results we noticed that Gemini answered correctly with “San Giovanni Battista” while both Mistral and ChatGpt provided wrong answers.
 
