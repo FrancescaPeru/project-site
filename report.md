@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# INDEX
+# REPORT
+
+## Index
 
 1. [Methodology](#1-methodology)
    
