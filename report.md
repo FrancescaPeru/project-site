@@ -203,7 +203,7 @@ From the RDF page of San Petronio we found the two artists that projected it and
 * [IRI Di Vincezo Antonio](https://w3id.org/arco/resource/Agent/2cfcbabdc54b72ed32e2a9d0b2a4538a)
 
 ### Step 2
-We formulated a query in order to find their other works. We used: the keyword **UNION** to find the works of either artists; the keyword **OPTIONAL** to show us any possible images; the keyword **LIMIT** to set a limit and the keyword **ORDER BY ASC** to list the results in alphabetical order.
+We formulated a query in order to find their other works. We used the following keywords: **UNION** to find the works of either artists, **OPTIONAL** to show us any possible images, **LIMIT** to set a limit and **ORDER BY ASC** to list the results in alphabetical order.
 
 ```js
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
