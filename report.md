@@ -174,7 +174,7 @@ WHERE {
 
 As a result we obtained this new triple:
 
-FOTOOOOOOOOOOOO
+![Construct](assets/images/Construct.png)
 
 
 ## 3. Immovable Cultural Property _Basilica di San Petronio_
