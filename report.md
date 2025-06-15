@@ -79,15 +79,14 @@ Let’s think step by step._
 
 #### ChatGPT
 
-![ChatGPT](https://github.com/FrancescaPeru/project-site/blob/master/assets/images/LLM%20PROMPTING/CHAIN_CHATGPT.png)
+
 
 #### Gemini
 
-![Gemini](https://github.com/FrancescaPeru/project-site/blob/master/assets/images/LLM%20PROMPTING/CHAIN_GEMINI.png)
+
 
 #### Mistral
 
-![Mistral](https://github.com/FrancescaPeru/project-site/blob/master/assets/images/LLM%20PROMPTING/CHAIN_MISTRAL.jpeg)
 
 Analysing the LLMs results we noticed that:
 * Mistral did not use ArCo’s properties and did not filter the label;
