@@ -235,7 +235,17 @@ According to our previous investigations we discovered that there are many paint
 
 * _Question: Which are the paintings exhibited in Chiesa di Santa Maria dei Servi in Bologna?_
 
-FOTOOOOO
+#### ChatGPT
+
+![ChatGPT](assets/images/ZEROSHOT_2_CHATGPT.png)
+
+#### Gemini 
+
+![Gemini](assets/images/ZEROSHOT_2_GEMINI.jpeg)
+
+#### Mistral
+
+![Mistral](assets/images/ZEROSHOT_2_MISTRAL.jpeg)
 
 All the LLMs answered correctly, however Mistral was more generic while Gemini e ChatGpt were more precise.
 
