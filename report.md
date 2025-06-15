@@ -154,7 +154,7 @@ We are provided with hundreds of results that don’t match with the entity that
 
 #### SUGGESTION
 
-To enrich the knowledge graph it would be useful to create an IRI in ArCo to identify _San Giovanni Battista_.
+To enrich the knowledge graph it would be useful to create an IRI on ArCo to identify _San Giovanni Battista_.
 We imported from dbpedia the IRI of _San Giovanni Battista_ to enrich ArCo’s knowledge graphs with a new entity: [IRI DBpedia Giovanni Battista](https://dbpedia.org/page/John_the_Baptist).
 
 ### Step 6
