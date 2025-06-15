@@ -228,7 +228,7 @@ We obtained 12 results of which half is in English and half is in Italian, with 
 
 ### Step 3
 
-Among all the results we also chose _Chiesa di Santa Maria dei Servi_ ([IRI of the church])(https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309).
+Among all the results we also chose _Chiesa di Santa Maria dei Servi_ ([IRI of the church](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309)).
 In the RDF description of the church we noticed that there are no links to the artworks that can be found within it.
 
 According to our previous investigations we discovered that there are many paintings within the church. We queried the LLMs about the paintings with a **zero-shot prompting technique**.
