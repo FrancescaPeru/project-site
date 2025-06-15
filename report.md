@@ -77,9 +77,17 @@ Still not obtaining any results, we decided to base our research on the address 
 _Task: Write a SPARQL query to find the Address of Piazza Santo Stefano in Bologna using Turtle syntax. 
 Let’s think step by step._
 
-### Large image
+#### ChatGPT
 
 ![ChatGPT](https://github.com/FrancescaPeru/project-site/blob/master/assets/images/LLM%20PROMPTING/CHAIN_CHATGPT.png)
+
+#### Gemini
+
+![Gemini](https://github.com/FrancescaPeru/project-site/blob/master/assets/images/LLM%20PROMPTING/GEMINI.png)
+
+#### Mistral
+
+![Mistral](https://github.com/FrancescaPeru/project-site/blob/master/assets/images/LLM%20PROMPTING/MISTRAL.png)
 
 Analysing the LLMs results we noticed that:
 * Mistral did not use ArCo’s properties and did not filter the label;
