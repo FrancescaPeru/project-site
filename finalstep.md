@@ -6,6 +6,6 @@ layout: default
 
 _yay_
 
-[Link to Report](./report.md)
+[Report](./report.md)
 
 [Home](./)
