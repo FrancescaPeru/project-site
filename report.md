@@ -79,7 +79,7 @@ Let’s think step by step._
 
 #### ChatGPT
 
-
+![ChatGPT](assets/images/CHAIN_CHATGPT.png)
 
 #### Gemini
 
