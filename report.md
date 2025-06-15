@@ -79,7 +79,7 @@ Let’s think step by step._
 
 #### ChatGPT
 
-![ChatGPT](/images/LLM%20PROMPTING/CHAIN_CHATGPT.png)
+![ChatGPT](https://github.com/FrancescaPeru/project-site/blob/master/images/LLM%20PROMPTING/CHAIN_CHATGPT.png)
 
 #### Gemini
 
