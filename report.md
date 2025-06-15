@@ -83,7 +83,7 @@ Let’s think step by step._
 
 #### Gemini
 
-
+![Gemini](assets/images/CHAIN_GEMINI.png)
 
 #### Mistral
 
