@@ -321,7 +321,7 @@ Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple th
 
    HistoricOrArtisticProperty:1600034809-10  a-cd:isLocatedIn ArchitecturalOrLandscapeHeritage:1600033242
 
-   _Task: Based on the previous example that I gave you, could you transform the following sentence “the record specifies that the painting “Madonna con Bambino (dipinto) di Cenni di Pepo detto Cimabue (sec. XIII) is kept in Chiesa di Santa Maria dei Servi (chiesa, basilicale) - Bologna (BO)" into RDF format using the ArCo ontology?_
+   * _Task: Based on the previous example that I gave you, could you transform the following sentence “the record specifies that the painting “Madonna con Bambino (dipinto) di Cenni di Pepo detto Cimabue (sec. XIII) is kept in Chiesa di Santa Maria dei Servi (chiesa, basilicale) - Bologna (BO)" into RDF format using the ArCo ontology?_
 
 #### ChatGPT
 
