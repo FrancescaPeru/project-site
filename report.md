@@ -298,6 +298,7 @@ Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple th
 
 * Question:
    * Example 1
+   
    Marte e Venere is kept in Palazzo Pamphilj, Roma (RM).
 
    RDF format:
@@ -310,6 +311,7 @@ Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple th
    HistoricOrArtisticProperty:1201202323-8  a-cd:isLocatedIn ArchitecturalOrLandscapeHeritage:1200480714
 
    * Example 2
+   
    Assunzione della Madonna is kept in Chiesa di S. Maria Icona Vetere (chiesa, cattedrale), Foggia (FG).
 
    RDF format: 
