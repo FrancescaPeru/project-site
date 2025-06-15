@@ -76,8 +76,7 @@ Still not obtaining any results, we decided to base our research on the address 
 * _Question: You are given the following ontology terms from ArCo:_
   _clv:Address (class of addressable objects)_
   _rdfs:label (data property linking an entity to its label)_
-_Task: Write a SPARQL query to find the Address of Piazza Santo Stefano in Bologna using Turtle syntax. 
-Let’s think step by step._
+     * _Task: Write a SPARQL query to find the Address of Piazza Santo Stefano in Bologna using Turtle syntax. Let’s think step by step._
 
 #### ChatGPT
 
@@ -296,7 +295,7 @@ We obtained 7 results and between those we chose the one called **a-cd:isLocated
 
 Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple that could express this relation. We used the **few-shot prompting technique** and provided two examples, hoping to achieve a more accurate output that would imitate our examples. Here is our question to the LLMs:
 
-* Question:
+* _Question:_
    * Example 1
    
    Marte e Venere is kept in Palazzo Pamphilj, Roma (RM).
