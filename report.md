@@ -296,6 +296,33 @@ We obtained 7 results and between those we chose the one called **a-cd:isLocated
 
 Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple that could express this relation. We used the **few-shot prompting technique** and provided two examples, hoping to achieve a more accurate output that would imitate our examples. Here is our question to the LLMs:
 
+* Question:
+   * Example 1
+   Marte e Venere is kept in Palazzo Pamphilj, Roma (RM).
+
+   RDF format:
+   IRI Marte e Venere (dipinto) di Brandi Giacinto (bottega) (sec. XVII) = https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201202323-8
+
+   is kept in = a-cd:isLocatedIn = https://w3id.org/arco/ontology/context-description/isLocatedIn
+
+   IRI Palazzo Pamphilij (palazzo) Roma (RM) = https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/1200480714
+
+   HistoricOrArtisticProperty:1201202323-8  a-cd:isLocatedIn ArchitecturalOrLandscapeHeritage:1200480714
+
+   * Example 2
+   Assunzione della Madonna is kept in Chiesa di S. Maria Icona Vetere (chiesa, cattedrale), Foggia (FG).
+
+   RDF format: 
+   IRI Assunzione della Madonna (vetrata) di Milone G (sec. XX) = https://w3id.org/arco/resource/HistoricOrArtisticProperty/1600034809-10
+
+   is kept in = a-cd:isLocatedIn = https://w3id.org/arco/ontology/context-description/isLocatedIn
+
+  IRI Chiesa di S. Maria Icona Vetere (chiesa, cattedrale) - Foggia (FG) = https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/1600033242
+
+   HistoricOrArtisticProperty:1600034809-10  a-cd:isLocatedIn ArchitecturalOrLandscapeHeritage:1600033242
+
+   _Task: Based on the previous example that I gave you, could you transform the following sentence “the record specifies that the painting “Madonna con Bambino (dipinto) di Cenni di Pepo detto Cimabue (sec. XIII) is kept in Chiesa di Santa Maria dei Servi (chiesa, basilicale) - Bologna (BO)" into RDF format using the ArCo ontology?_
+
 #### ChatGPT
 
 ![ChatGPT](assets/images/FEWSHOT_CHATGPT.png)
