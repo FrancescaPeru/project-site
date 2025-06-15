@@ -92,9 +92,21 @@ Let’s think step by step._
 Analysing the LLMs results we noticed that:
 * Mistral did not use ArCo’s properties and did not filter the label;
 * Gemini did not filter the label;
-* ChatGpt correctly used ArCo’s properties that we provided and used the double FILTER to find the square in Bologna.
+* ChatGpt correctly used ArCo’s properties that we provided and used the double FILTER to find the square in Bologna. Therefore, we employed the following query.
 
-Using the ChatGpt’s query, we obtained this IRI as a result: [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
+```js
+PREFIX clv: <https://w3id.org/italia/onto/CLV/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?address
+WHERE {
+  ?address a clv:Address ;
+           rdfs:label ?label .
+  FILTER(CONTAINS(LCASE(?label), "piazza santo stefano") && CONTAINS(LCASE(?label), "bologna"))
+}
+```
+
+We obtained this IRI as a result: [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
 
 After reviewing the results and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
