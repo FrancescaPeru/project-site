@@ -121,7 +121,11 @@ Among the churches in _Piazza Santo Stefano_ that form part of the Basilica, we 
 We asked the LLMs to find the saint to whom the _Chiesa del Crocifisso_ is dedicated with the **zero-shot prompting technique**. According to our investigations, we discovered that it is dedicated to San Giovanni Battista.
 * _Question: To whom is dedicated Chiesa del Crocifisso in Piazza Santo Stefano in Bologna?_
 
-INSERT FOTO
+#### ChatGPT
+
+#### Gemini
+
+#### Mistral
 
 Analysing the results we noticed that Gemini answered correctly with “San Giovanni Battista” while both Mistral and ChatGpt provided wrong answers.
 
