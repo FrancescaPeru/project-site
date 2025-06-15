@@ -316,6 +316,7 @@ Analyzing the results we noticed that:
 Since the LLMs results were not satisfactory we dediced to provide our own triple: 
 <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800108309> a-cd:isLocatedIn <https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039> }
 
+
 [Final Step](./finalstep.md)
 
 [Home](./)
