@@ -21,6 +21,7 @@ We faced many challenges related to the ArCo knowledge Graph and the LLMs. Howev
 * Using LLMs to retrieve useful information
 * Enrichment of existing data
 
+
 [Report](./report.md)
 
 [Home](./)
