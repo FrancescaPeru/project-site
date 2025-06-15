@@ -181,7 +181,7 @@ As a result we obtained this new triple:
 
 ### Step 1
 
-For the second topic we chose the _Basilica di San Petronio_. We formulated a query in order to find it on ArCo:
+For the second topic we chose the _Basilica di San Petronio_. We ran a query in order to find it on ArCo:
 
 ```js
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
