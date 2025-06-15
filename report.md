@@ -15,9 +15,9 @@ layout: default
 
 * Making hypotheses
 
-* Looking for the data in the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/
+* Looking for the data in the ArCo ontologies documentation: [ArCo ontology](http://wit.istc.cnr.it/arco/)
 
-* Realizing queries using the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql
+* Realizing queries using the [ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)
 
 * Verifying if the retrieved data could actually back up our hypotheses or not
 
