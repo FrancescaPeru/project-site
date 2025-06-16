@@ -280,7 +280,7 @@ Checking its RDF description, we noticed that it is not linked to the _Chiesa di
 
 ### Step 5
 
-Therefore, we created a SPARQL query to search through the ArCo ontologies to find a property that we could use to link this work of art to the church where it is kept.
+Therefore, we created a SPARQL query to search through the ArCo ontologies for a property that we could use to link this work of art to the church in which it is kept.
 
 ```js
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
