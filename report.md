@@ -291,7 +291,7 @@ WHERE {
 ?church a arco:ArchitecturalOrLandscapeHeritage.
 ?culturalProperty ?propertylocation ?church.
 }
-ORDER BY ASC (?place)
+ORDER BY ASC (?propertylocation)
 LIMIT 50
 ```
 We obtained 7 results and between those we chose the one called **a-cd:isLocatedIn** ([IRI property isLocatedIn](https://w3id.org/arco/ontology/context-description/isLocatedIn)). This property, part of the “Context-Description” properties, links a cultural good to another related cultural good, which is its location.
