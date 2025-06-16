@@ -164,6 +164,8 @@ ORDER BY ASC (?label)
 ```
 We are provided with hundreds of results that don’t match with the entity that we were looking for (they were all referring to people, not to the saint).
 
+![Step5](https://gruppo-12.github.io/project-site/)
+
 #### SUGGESTION
 
 To enrich the knowledge graph it would be useful to create an IRI on ArCo to identify _San Giovanni Battista_.
