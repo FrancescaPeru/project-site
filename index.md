@@ -16,9 +16,10 @@ Basilicas in Bologna: a detailed analysis of the Basilicas of _Santo Stefano_ an
 
 ## Purpose
 
-* Exploring the ArCo Ontology to find the two cultural properties
-* Enriching the ArCo knowledge graph with further details about the two cultural properties
-* Retrieving useful information using LLMs
+* Exploring the ArCo knowledge graph to find the two cultural properties.
+* Detect potential gaps in their RDF descriptions.
+* Retrieve useful information using LLMs.
+* Produce new knowledge to enrich ArCo with further details.
 
 ## Team
 
