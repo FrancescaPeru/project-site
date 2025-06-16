@@ -12,7 +12,7 @@ Large Language Models: Gemini, ChatGPT and Mistral
 
 ## Topic
 
-Basilicas in Bologna: a detailed analysis of the basilicas of _Santo Stefano_ and _San Petronio_
+Basilicas in Bologna: a detailed analysis of the Basilicas of _Santo Stefano_ and _San Petronio_
 
 ## Purpose
 
