@@ -199,7 +199,7 @@ REGEX(?label, "San Petronio", "i") &&
 REGEX(?label, "basilica", "i"))
 }
 ```
-We obtained 2 results of which one is in English and the other in Italian, referring to the same entity: [IRI Basilica di San Petronio](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039)
+We obtained 2 results, one in English and the other in Italian, referring to the same entity: [IRI Basilica di San Petronio](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039)
 
 From the RDF page of San Petronio we found the two artists that projected it and took their IRIs: 
 * [IRI Andrea da Faenza](https://w3id.org/arco/resource/Agent/1225a7cd56d844001bb0d0256259ab63)
@@ -227,7 +227,7 @@ OPTIONAL { ?cp a-cd:depiction ?depiction }
 ORDER BY ASC (?label)
 LIMIT 20
 ```
-We obtained 12 results of which half is in English and half is in Italian, with the same IRIs.
+We obtained 12 results, half of which are in English and half in Italian, with the same IRIs.
 The results concerned only one of the two authors, Antonio di Vincenzo, and we did not get any images.
 
 ### Step 3
