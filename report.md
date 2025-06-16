@@ -288,6 +288,8 @@ REGEX(?authorlabel, "Cenni di Pepo", "i"))
 ```
 We got 10 results, half of which were in English. Between the given results there is the painting that we were looking for: [IRI painting](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800018958)
 
+![Step4](assets/images/Step4_pt2.png)
+
 Checking its RDF description, we noticed that it is not linked to the _Chiesa di Santa Maria dei Servi_, where it is kept.
 
 ### Step 5
