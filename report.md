@@ -342,9 +342,9 @@ Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple th
 ![Mistral](assets/images/FEWSHOT_MISTRAL.png)
 
 Analyzing the results we noticed that: 
-* Gemini respected the structure that we provided but it used some variables instead of the IRIs
-* ChatGpt respected the structure that we provided but invented the IRIs
-* Mistral respected the structure that we provided, but used different prefixes to those indicated and invented the IRIs
+* Gemini respected the structure that we provided but it used some variables instead of the IRIs;
+* ChatGpt respected the structure that we provided but invented the IRIs;
+* Mistral respected the structure that we provided, but used different prefixes to those indicated and invented the IRIs.
 
 Since the LLMs results were not satisfactory we decided to provide our own triple: 
 <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800018958> a-cd:isLocatedIn <https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309> }
