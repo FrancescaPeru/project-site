@@ -164,7 +164,7 @@ ORDER BY ASC (?label)
 ```
 We are provided with hundreds of results that don’t match with the entity that we were looking for (they were all referring to people, not to the saint).
 
-![Step5](https://gruppo-12.github.io/project-site.png)
+![Step5](assets/images/step_5_pt1.png)
 
 #### SUGGESTION
 
