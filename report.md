@@ -15,17 +15,25 @@ layout: default
 
 ## 1. Methodology
 
+### General methodology 
 * Making hypotheses
-
-* Looking for the data in the [ArCo ontologies documentation](http://wit.istc.cnr.it/arco/)
-
-* Realizing queries using the [ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)
-
+* Looking for the vocabulary in the ArCo ontologies documentation
+* Realizing queries using the ArCo SPARQL endpoint
 * Verifying if the retrieved data could actually back up our hypotheses or not
-
 * Using Large Language Models 
-
 * Creating RDF triples that could be addeded to the knowledge graph
+
+### How was the gap identified?
+* Starting from more explorative and generic queries 
+* Checking the RDF description of the retrieved data
+* Looking for missing information 
+
+### Tools used
+* ArCo as the main Knowledge Graph
+* Dbpedia to enrich ArCo
+* SPARQL SELECT and CONSTRUCT 
+* ChatGpt, Gemini and Mistral
+
 
 
 ## 2. Immovable Cultural Property _Basilica di Santo Stefano_
