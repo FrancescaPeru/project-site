@@ -4,15 +4,10 @@ layout: default
 
 # INTRODUCTION
 
-## Context
-
-ArCo: the knowledge graph of the Italian Cultural Heritage
-
-Large Language Models: Gemini, ChatGPT and Mistral
 
 ## Topic
 
-Basilicas in Bologna: a detailed analysis of the Basilicas of _Santo Stefano_ and _Santa Maria dei Servi_
+Basilicas in Bologna: a detailed analysis of the Basilicas of _Santo Stefano_ and _Santa Maria dei Servi_.
 
 ## Purpose
 
