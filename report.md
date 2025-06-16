@@ -253,7 +253,7 @@ According to our previous investigations we discovered that there are many paint
 
 All of the Large Language Models responded correctly, providing the titles of paintings actually contained in the church. However, none of them provided an exhaustive list: 
 * Mistral was more general by grouping frescos from different authors
-* Gemini and ChatGpt listed only the works they considered most important.
+* Gemini and ChatGpt listed only the works they considered most important
 
 ### Step 4
 
