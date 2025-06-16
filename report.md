@@ -285,7 +285,7 @@ Therefore, we created a SPARQL query to search through the ArCo ontologies to fi
 ```js
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
-SELECT DISTINCT ?place
+SELECT DISTINCT ?propertylocation
 WHERE {
 ?culturalProperty a arco:HistoricOrArtisticProperty. 
 ?church a arco:ArchitecturalOrLandscapeHeritage.
