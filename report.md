@@ -32,7 +32,7 @@ layout: default
 
 ### Step 1
 
-We chose the _Basilica di Santo Stefano_ as our first topic. Then, we examined the ArCo ontology to see to which class the churches belong. We found two classes: a more general one (arco:ImmovableCulturalProperty) and a more specific one (arco:ArchitecturalOrLandscapeHeritage). We chose ImmovableCulturalProperty. Then we did the first query in order to find the _Basilica di Santo Stefano_ on ArCo, and we also employed the keyword **DISTINCT** to be sure not to have any duplicates in the results.
+We chose the _Basilica di Santo Stefano_ as our first topic. Then, we examined the ArCo ontology to see to which class the churches belong. We found two classes: a more general one (arco:ImmovableCulturalProperty) and a more specific one (arco:ArchitecturalOrLandscapeHeritage). We chose "ImmovableCulturalProperty". Then we did the first query in order to find the _Basilica di Santo Stefano_ on ArCo, and we also employed the keyword **DISTINCT** to be sure not to have any duplicates in the results.
 
 ```js
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -103,7 +103,8 @@ SELECT ?address
 WHERE {
   ?address a clv:Address ;
            rdfs:label ?label .
-  FILTER(CONTAINS(LCASE(?label), "piazza santo stefano") && CONTAINS(LCASE(?label), "bologna"))
+FILTER(
+CONTAINS(LCASE(?label), "piazza santo stefano") && CONTAINS(LCASE(?label), "bologna"))
 }
 ```
 
@@ -229,7 +230,7 @@ We obtained 12 results of which half is in English and half is in Italian, with 
 
 ### Step 3
 
-Among all the results we also chose _Chiesa di Santa Maria dei Servi_ ([IRI of the church](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309)).
+Among all the results we chose _Chiesa di Santa Maria dei Servi_ ([IRI of the church](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309)).
 In the RDF description of the church we noticed that there are no links to the artworks that can be found within it.
 
 According to our previous investigations we discovered that there are many paintings within the church. We queried the LLMs about the paintings with a **zero-shot prompting technique**.
@@ -252,7 +253,7 @@ All the LLMs answered correctly, however Mistral was more generic while Gemini e
 
 ### Step 4
 
-Among all the results, we chose Cimabue’s _La Madonna col bambino e angeli_ and we wanted to see if the painting existed on the ArCo system. To do so, we used the following query:
+Among all the results, we chose Cimabue’s _Majesty_, also known as _La Madonna col bambino e angeli_ and we wanted to see if the painting existed on the ArCo system. To do so, we used the following query:
 
 ```js
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -341,7 +342,7 @@ Analyzing the results we noticed that:
 * ChatGpt respected the structure that we provided but invented the IRIs
 * Mistral respected the structure that we provided, but used different prefixes to those indicated and invented the IRIs
 
-Since the LLMs results were not satisfactory we dediced to provide our own triple: 
+Since the LLMs results were not satisfactory we decided to provide our own triple: 
 <https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800108309> a-cd:isLocatedIn <https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039> }
 
 
