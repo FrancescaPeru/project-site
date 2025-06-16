@@ -240,6 +240,8 @@ LIMIT 20
 We obtained 12 results, half of which are in English and half in Italian, with the same IRIs.
 The results concerned only one of the two authors, Antonio di Vincenzo, and we did not get any images.
 
+![Step2](assets/images/step_2_pt2.png)
+
 ### Step 3
 
 Among all the results we chose _Chiesa di Santa Maria dei Servi_ ([IRI of the church](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309)).
