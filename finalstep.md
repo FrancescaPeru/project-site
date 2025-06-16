@@ -13,7 +13,7 @@ We faced many challenges related to the ArCo knowledge Graph and the LLMs. Howev
 * The LLMs’ answers were not satisfactory since they did not provide us with accurate information. E.g.: they invented the IRIs instead of giving the actual ones.
   * Solution: we replaced the wrong IRIs with the correct ones and then created the new triple.
 
-## 2. Conclusions 
+## 2. Summarizing what we did
 
 * Previous analysis of the entities thanks to SPARQL queries
 * Browsing the main ArCo ontologies to find classes and properties
