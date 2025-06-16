@@ -120,7 +120,7 @@ To enrich ArCo, it would be useful to add a single entity that represents the en
 
 ### Step 4
 
-Among the churches in _Piazza Santo Stefano_ that form part of the Basilica, we choose _Chiesa del Crocifisso_, and by analyzing its RDF page, we noticed that among the missing information there is the saint to whom it is dedicated.
+Among the churches in _Piazza Santo Stefano_ that form part of the Basilica, we chose _Chiesa del Crocifisso_, and by analyzing its RDF page, we noticed that among the missing information there is the saint to whom it is dedicated.
 
 We asked the LLMs to find the saint to whom the _Chiesa del Crocifisso_ is dedicated with the **zero-shot prompting technique**. According to our investigations, we discovered that it is dedicated to San Giovanni Battista.
 * _Question: To whom is dedicated Chiesa del Crocifisso in Piazza Santo Stefano in Bologna?_
