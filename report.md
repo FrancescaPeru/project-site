@@ -10,7 +10,7 @@ layout: default
    
 2. [Immovable Cultural Property _Basilica di Santo Stefano_](#2-immovable-cultural-property-basilica-di-santo-stefano)
    
-3. [Immovable Cultural Property _Basilica di San Petronio_](#3-immovable-cultural-property-basilica-di-san-petronio)
+3. [Immovable Cultural Property _Basilica di Santa Maria dei Servi_](#3-immovable-cultural-property-basilica-di-santa-maria-dei-servi)
 
 
 ## 1. Methodology
@@ -108,9 +108,11 @@ CONTAINS(LCASE(?label), "piazza santo stefano") && CONTAINS(LCASE(?label), "bolo
 }
 ```
 
-We obtained this IRI as a result: [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
+We obtained two IRIs as a result:
+* [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
+* [IRI andress Piazza Santo Stefano, 9c](https://w3id.org/arco/resource/Address/25eaafb6aff66c718f77be5407be8755)
 
-After reviewing the results and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
+Both these IRIs refer to the adress of Piazza Santo Stefano, the former is more general than the latter. Therefore, we checked their RDF pages, and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
 #### SUGGESTION 
 
@@ -178,11 +180,11 @@ As a result we obtained this new triple:
 ![Construct](assets/images/Construct.png)
 
 
-## 3. Immovable Cultural Property _Basilica di San Petronio_
+## 3. Immovable Cultural Property _Basilica di Santa Maria dei Servi_
 
 ### Step 1
 
-For the second topic we chose the _Basilica di San Petronio_. We ran a query in order to find it on ArCo:
+For the second topic we started from _Basilica di San Petronio_. We ran a query in order to find it on ArCo:
 
 ```js
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
