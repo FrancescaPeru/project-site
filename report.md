@@ -160,7 +160,7 @@ To enrich the knowledge graph it would be useful to create an IRI on ArCo to ide
 
 ### Step 6
 
-Therefore, we imported from dbpedia the IRI of _San Giovanni Battista_ to enrich ArCo’s knowledge graphs with a new entity: [IRI DBpedia Giovanni Battista](https://dbpedia.org/page/John_the_Baptist). Then we used a **SPARQL CONSTRUCT** query to create a new property in order to describe the relationship between the church and the saint to whom it is dedicated, obtaining a new triple that can enrich ArCo’s knowledge graph. We chose the **a-cd prefix** because we assumed we could find this kind of information in the context description ontology.
+Therefore, we imported from dbpedia the IRI of _San Giovanni Battista_: [IRI DBpedia Giovanni Battista](https://dbpedia.org/page/John_the_Baptist). Then we used a **SPARQL CONSTRUCT** query to create a new property in order to describe the relationship between the church and the saint to whom it is dedicated, obtaining a new triple that can enrich ArCo’s knowledge graph. We chose the **a-cd prefix** because we assumed we could find this kind of information in the context description ontology.
 
 ```js
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
