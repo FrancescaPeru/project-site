@@ -241,7 +241,7 @@ According to our previous investigations we discovered that there are many paint
 
 #### ChatGPT
 
-![ChatGPT](assets/images/ZEROSHOT_2_CHATGPT.png)
+![ChatGPT]
 
 #### Gemini 
 
