@@ -154,7 +154,7 @@ FILTER(REGEX(?label, "Giovanni Battista", "i"))
 }
 ORDER BY ASC (?label)
 ```
-We are provided with hundreds of results that don’t match with the entity that we were looking for.
+We are provided with hundreds of results that don’t match with the entity that we were looking for (they were all referring to people, not to the saint).
 
 #### SUGGESTION
 
