@@ -93,7 +93,7 @@ Still not obtaining any results, we decided to base our research on the address 
 Analysing the LLMs results we noticed that:
 * Mistral did not use ArCo’s properties and did not filter the label;
 * Gemini did not filter the label;
-* ChatGpt correctly used ArCo’s properties that we provided and used the double FILTER to find the square in Bologna. Therefore, we employed the following query.
+* ChatGpt correctly used ArCo’s properties that we provided and used the double FILTER to find the square in Bologna. Therefore, we employed the following query:
 
 ```js
 PREFIX clv: <https://w3id.org/italia/onto/CLV/>
