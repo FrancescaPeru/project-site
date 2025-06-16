@@ -201,7 +201,7 @@ REGEX(?label, "basilica", "i"))
 ```
 We obtained 2 results, one in English and the other in Italian, referring to the same entity: [IRI Basilica di San Petronio](https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039)
 
-From the RDF page of San Petronio we found the two artists that projected it and took their IRIs: 
+From the RDF page of San Petronio we found the two artists that designed it and took their IRIs: 
 * [IRI Andrea da Faenza](https://w3id.org/arco/resource/Agent/1225a7cd56d844001bb0d0256259ab63)
 * [IRI Di Vincezo Antonio](https://w3id.org/arco/resource/Agent/2cfcbabdc54b72ed32e2a9d0b2a4538a)
 
