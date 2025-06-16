@@ -347,7 +347,7 @@ Analyzing the results we noticed that:
 * Mistral respected the structure that we provided, but used different prefixes to those indicated and invented the IRIs
 
 Since the LLMs results were not satisfactory we decided to provide our own triple: 
-<https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800108309> a-cd:isLocatedIn <https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800135039> }
+<https://w3id.org/arco/resource/HistoricOrArtisticProperty/0800018958> a-cd:isLocatedIn <https://w3id.org/arco/resource/ArchitecturalOrLandscapeHeritage/0800108309> }
 
 
 [Final Step](./finalstep.md)
