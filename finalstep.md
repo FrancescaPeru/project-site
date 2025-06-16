@@ -16,7 +16,7 @@ We faced many challenges related to the ArCo knowledge Graph and the LLMs. Howev
 ## 2. Conclusions 
 
 * Previous analysis of the entities thanks to SPARQL queries
-* Browsing the main ArCo ontologies to find classes and properties.
+* Browsing the main ArCo ontologies to find classes and properties
 * Creation of new triples with SPARQL CONSTRUCT and LLMs to fill in knowledge gaps
 * Using LLMs to retrieve useful information
 * Enrichment of existing data
