@@ -308,6 +308,8 @@ LIMIT 50
 ```
 We obtained 7 results and between those we chose the one called **a-cd:isLocatedIn** ([IRI property isLocatedIn](https://w3id.org/arco/ontology/context-description/isLocatedIn)). This property, part of the “Context-Description” properties, links a cultural good to another related cultural good, which is its location.
 
+![Step5](assets/images/Step5_pt2.png)
+
 ### Step 6
 
 Finally, we asked the LLMs Gemini, Mistral and ChatGpt to create a new triple that could express this relation. We used the **few-shot prompting technique** and provided two examples, hoping to achieve a more accurate output that would imitate our examples. Here is our question to the LLMs:
