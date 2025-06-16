@@ -72,7 +72,7 @@ We obtained no results.
 
 ### Step 3
 
-Still not obtaining any results, we decided to base our research on the address “Piazza Santo Stefano” in order to find the buildings located there. We asked the LLMs to write a query to retrieve this information with the **prompting technique chain-of-thought**.
+Still not obtaining any results, we decided to base our research on the address “Piazza Santo Stefano” in order to find the buildings located there. We asked the LLMs to write a query to retrieve this information with the **chain-of-thought prompting technique**.
 * _Question: You are given the following ontology terms from ArCo:_
   _clv:Address (class of addressable objects)_
   _rdfs:label (data property linking an entity to its label)_
