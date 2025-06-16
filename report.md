@@ -112,7 +112,7 @@ We obtained two IRIs as a result:
 * [IRI address Piazza Santo Stefano](https://w3id.org/arco/resource/Address/4e1342b28cd0daeca522227839eef00c)
 * [IRI andress Piazza Santo Stefano, 9c](https://w3id.org/arco/resource/Address/25eaafb6aff66c718f77be5407be8755)
 
-Both these IRIs refer to the adress of Piazza Santo Stefano, the former is more general than the latter. Therefore, we checked their RDF pages, and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
+Both these IRIs refer to the adress of Piazza Santo Stefano, but the former is more general than the latter. Therefore, we checked their RDF pages, and knowing that the _Basilica di Santo Stefano_ is a complex of churches, we noticed that there is no entity representing the Santo Stefano complex as a whole, but the various churches that form the Basilica are listed separately.
 
 #### SUGGESTION 
 
