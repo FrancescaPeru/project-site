@@ -19,7 +19,7 @@ The Basilica of Santa Maria dei Servi is a beautiful example of Gothic architect
 
 ## Purpose
 
-* Exploring the ArCo knowledge graph to find the two cultural properties.
+* Explore the ArCo knowledge graph to find the two cultural properties.
 * Detect potential gaps in their RDF descriptions.
 * Retrieve useful information using LLMs.
 * Produce new knowledge to enrich ArCo with further details.
