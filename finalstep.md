@@ -6,7 +6,7 @@ layout: default
 
 ## Discussion
 
-We faced many challenges related to the ArCo knowledge Graph and the LLMs. However, the most significant ones were:
+We faced many challenges related to the ArCo knowledge Graph and the LLMs. However, the most representative examples were:
 * The knowledge graph is still lacking some important information, making the research more difficult. E.g.: lack of IRI for San Giovanni Battista as agent and lack of property to express the relationship between the church and the saint to whom it is dedicated.
   * Solution: we took the DBpedia IRI of San Giovanni Battista and we added it to ArCo. Then we used a SPARQL CONSTRUCT query to create a new property and as a consequence we obtained a new triple.
 
