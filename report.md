@@ -58,7 +58,7 @@ We obtained no results.
 
 ### Step 2
 
-Since we did not get any results, we made the query more generic by looking for an Immovable Cultural Property related to “Santo Stefano” in the city of “Bologna”. In order to do so, we used the keywords **FILTER** and **REGEX** to obtain results containing these substrings. 
+Since we did not get any results, we made the query more generic by looking for an Immovable Cultural Property related to “Santo Stefano” in the city of “Bologna”. In order to do so, we used the keywords **FILTER** and **REGEX** and the logical operator **&&** to obtain results containing both substrings. 
 
 ```js
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
